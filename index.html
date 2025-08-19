@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buena Vibra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenido a Buena Vibra</h1>
+    <p>¡Aquí compartimos contenido motivacional para inspirarte y elevar tu energía!</p>
+    
+    <div class="social-links">
+        <h2>Síguenos en nuestras redes sociales:</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/tu-canal" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/tu-canal" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com/tu-canal" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/tu-canal" target="_blank">YouTube</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dayOfWeek = new Date().getDay(); // 0 = Domingo, 1 = Lunes, ..., 6 = Sábado
+            const body = document.body;
+
+            switch (dayOfWeek) {
+                case 0: body.classList.add('sunday'); break;
+                case 1: body.classList.add('monday'); break;
+                case 2: body.classList.add('tuesday'); break;
+                case 3: body.classList.add('wednesday'); break;
+                case 4: body.classList.add('thursday'); break;
+                case 5: body.classList.add('friday'); break;
+                case 6: body.classList.add('saturday'); break;
+            }
+        });
+    </script>
+</body>
+</html>
