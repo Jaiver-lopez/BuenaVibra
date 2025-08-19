@@ -1,1 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* Elimina el margen por defecto */
+}
 
+h1 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h2 {
+    color: #ff6f61;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block; /* Cambiado a inline-block para mejor control en responsividad */
+    margin: 0 15px;
+}
+
+.social-links a {
+    display: inline-block; /* Para que se comporten como botones */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 10px; /* Espaciado entre botones */
+    background-color: #ff6f61; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.social-links a:hover {
+    background-color: #ff9800; /* Cambia el color de fondo al pasar el cursor */
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+/* Clases para el cambio de tono según el día */
+.monday {
+    background-color: #f0f8ff; /* Lunes */
+}
+
+.tuesday {
+    background-color: #ffe4e1; /* Martes */
+}
+
+.wednesday {
+    background-color: #e6e6fa; /* Miércoles */
+}
+
+.thursday {
+    background-color: #fffacd; /* Jueves */
+}
+
+.friday {
+    background-color: #e0ffff; /* Viernes */
+}
+
+.saturday {
+    background-color: #f5f5dc; /* Sábado */
+}
+
+.sunday {
+    background-color: #ffe4b5; /* Domingo */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 1em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .social-links a {
+        padding: 8px 15px; /* Ajustar el espaciado interno de los botones */
+        margin: 5px; /* Ajustar el espaciado entre botones */
+    }
+
+    li {
+        display: block; /* Cambiar a bloque para que los botones se apilen verticalmente */
+        margin: 10px 0; /* Espaciado vertical entre botones */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+    }
+
+    p {
+        font-size: 0.9em; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    }
+}
